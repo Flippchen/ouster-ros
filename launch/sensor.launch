@@ -44,7 +44,7 @@
 
   <group ns="$(arg ouster_ns)">
     <node pkg="nodelet" type="nodelet" name="os_node"
-      output="screen" required="true"
+      output="screen" required="false"
       args="load nodelets_os/OusterSensor os_nodelet_mgr $(arg _no_bond)">
       <param name="~/sensor_hostname" type="str" value="$(arg sensor_hostname)"/>
       <param name="~/udp_dest" type="str" value="$(arg udp_dest)"/>
